@@ -1,1 +1,2 @@
-# the-tech-blog
+# The Tech Blog
+
