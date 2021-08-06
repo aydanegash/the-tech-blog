@@ -1,16 +1,16 @@
 const { Model, DataTypes } = require('sequelize');
-//const sequelize = require('../config/connection');
+const sequelize = require('../config/connection');
 
 class Post extends Model {}
 
 Post.init(
   {
-    // id: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    //   primaryKey: true,
-    //   autoIncrement: true,
-    // },
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -19,11 +19,11 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
       },
-    // date: {
-    //   type: DataTypes.DATE,
-    //   allowNull: false,
-    //   defaultValue: DataTypes.NOW,
-    // },
+    date: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: DataTypes.NOW,
+    },
   },
   {
     sequelize,
