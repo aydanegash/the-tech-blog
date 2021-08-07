@@ -69,6 +69,7 @@ body {
 .hero {
   text-align: center;
   color:rgb(85, 84, 84);
+  padding-bottom: 75%;
 }
 
 footer {
@@ -82,29 +83,45 @@ footer {
 }
 
 .login {
-  width: 500px;
-  height: 550px;
+  width: 30%;
+  height: 50%;
   border: 5px solid #EE6E73;
   padding: 30px;
-  margin: 130px;
-  margin-left: 700px;
-  margin-bottom: 400px;
+  margin: 50px;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+  transform: translate(-50%, -50%);
+  padding: 2%;
 }
 
 .sign-up {
-  width: 500px;
-  height: 650px;
+  width: 30%;
+  height: 65%;
   border: 5px solid #EE6E73;
   padding: 30px;
-  margin: 130px;
-  margin-left: 700px;
-  margin-bottom: 400px;
-  text-align: center;
+  margin: 50px;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+  transform: translate(-50%, -50%);
+  padding: 2%;
 }
+
 
 form h4 {
   font-weight: 900;
   color:rgb(66, 65, 65);
+  text-align: left;
+}
+
+form textarea {
+  font-weight: 700;
+  color:rgb(36, 35, 35);
 }
 
 button {
@@ -119,16 +136,25 @@ button {
   box-shadow: 1px 1px #666;
   transform: translateY(9px);
   cursor: pointer;
+  justify-content: center;
 }
 
 .new-post {
-  width: 1000px;
-  height: 450px;
-  border: 5px solid #EE6E73;
-  padding: 20px;
-  margin: 130px;
-  margin-left: 450px;
+  padding: 2%;
   text-align: center;
+  min-height: 50vh;
+  width: 70%;
+  height: 50%;
+  border: 5px solid #EE6E73;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
+
+
+
 
 
