@@ -4,7 +4,7 @@ const path = require('path');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const helpers = require('./utils/helpers');
-//const routes = require('./controllers')
+const routes = require('./controllers')
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -32,8 +32,9 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.set('views', path.join(__dirname, '/../views'));
 
-app.use(require('./controllers/'));
+//app.use(require('./controllers/'));
 
 app.listen(PORT, () => {
   console.log('Server listening on: http://localhost:' + PORT);

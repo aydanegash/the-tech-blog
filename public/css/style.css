@@ -58,7 +58,7 @@ body {
   padding-bottom: 5px;
   padding-right: 50px;
   padding-left: 50px;
-
+  min-height: 240px;
 }
 
 .logo-image{
@@ -67,7 +67,7 @@ body {
   overflow: hidden;
 }
 
-.hero {
+.page-title {
   text-align: center;
   color:rgb(85, 84, 84);
 }
@@ -80,6 +80,7 @@ footer {
   font-weight: 900;
   color:rgb(255, 251, 251);
   font-size: 20px;
+  margin-top: -20%;
 }
 
 .login {
@@ -153,7 +154,24 @@ button {
   transform: translate(-50%, -50%);
 }
 
+.edit-btn {
+  position: absolute;
+  right:    2%;
+  bottom:   16%;
+  width: 120px;
+  border-radius: 9%;
+  padding: 15px;
+}
 
+.comment-btn {
+  position: absolute;
+  right:    2%;
+  bottom:   38%;
+  width: 120px;
+  height: 55px;
+  border-radius: 9% ;
+  padding: 15px;
+}
 
 
 

@@ -11,29 +11,33 @@
 <body>
   <nav>
      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">The Tech Blog</a>
+        <a href="/" class="brand-logo">The Tech Blog</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="/">Homepage</a></li>
           <li><a href="/dashboard">Dashboard</a></li>
-          <li><a href="login.handlebars">Login</a></li>
+          <li><a href="/login">Login</a></li>
         </ul>
       </div>
     </nav>
     
-  <header class="hero">
-      <h1 class="app-title"> Dashboard</h1>
+  <header class="page-title">
+      <h1> Dashboard</h1>
   </header>
 
+ <main class="col-auto">
+        {{{body}}}
+      </main> 
 
-  <footer>
+
+
+  
+  <br><br><br><footer>
     <div class="copyright">
       <p>&copy 2021 - The Tech Blog</p>
     </div>
   </footer>
 
- <main class="col-auto">
-        {{{body}}}
-      </main> 
+
         
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
